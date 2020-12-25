@@ -104,7 +104,7 @@ components.html(
     height=height,
 )
 #タイトルの追加
-st.title('Streamlit 超入門')
+st.title('うんこ')
 #テキストの追加
 st.write('DataFrame')
 
