@@ -6,9 +6,9 @@ st.title('注記検索')
 
 df = pd.read_csv('test_combine1228-3.csv',encoding='cp932',usecols=['日本語','値','会社名'])
 df = df.dropna(subset=['値'])
-input1 = st.text_input('①検索キーワードを入力してください')
+input1 = st.text_input('①検索キーワードを入力してください　例：減損')
 
-option = st.slider('②表示させたい会社数を選択してください', 0, 100 ,10)
+option = st.slider('②表示させたい項目数を選択してください', 0, 100 ,10)
 
 df = df[df['値'].str.contains(input1)]
 df = df.reset_index(drop=True)
